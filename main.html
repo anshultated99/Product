@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <title>
+            Product Landing Page
+        </title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <img src="http://www.customercarephonenumber.in/wp-content/uploads/2016/10/logo-one-plus_38_1441622391.png" alt="Header image" id="header-img">
+
+            <nav id="nav-bar">
+                <a href="#video" class="nav-link">Video</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+        </header>
+        <div class="embed">
+                <iframe id="video" width="560" height="315"
+                src="https://www.youtube.com/embed/Ls_dxo6vNTc" frameborder="0"
+                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+        </div>
+        <p class="features-title"> Some great features of One Plus 7 Pro</p>
+        <div id="features">
+            <div class="dash">
+                <img src="https://image.flaticon.com/icons/svg/131/131090.svg" alt="Dash Charging" id="dash">
+                <p>Dash Charging</p>
+            </div>
+
+            <div class="storage">
+                <img src="https://image.flaticon.com/icons/svg/148/148952.svg" alt="Storage Space" id="storage">
+                <p>Plenty of Storage</p>
+            </div>
+
+            <div class="processor">
+                <img src="https://image.flaticon.com/icons/svg/141/141009.svg" alt="Processor" id="processor">
+                <p>Fast Processor</p>
+            </div>
+        </div>
+
+        <div id="contact">
+                <div class="form-row-email">
+                 <form action="https://www.freecodecamp.com/email-submit" method="" enctype="text/plain" id="form">   
+                        <input type="email"
+                                id="email"
+                                class="input-text"
+                                placeholder="Enter your email"
+                                required
+                        />
+                    </div>
+                    <div class="submit">
+                            <button id="submit">
+                                Submit
+                            </button>
+                        </div>
+                </form>
+            </div>
+    </body>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+#header{
+    display: flex;
+    background-color: white;
+    margin:0;
+    width:100%;
+    position: fixed;
+    top:0;
+}
+#header-img{
+    width:80px;
+    height: auto;
+    margin: 15px;
+}
+#nav-bar{
+    margin-top: 32px;
+    float: right;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-family:'Acme', sans-sarif;
+    font-size: 30px;
+}
+.nav-link:hover{
+    background-color:silver;
+}
+.embed{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 200px;
+}
+.features-title{
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top:30px;
+}
+#features{
+    width:700px;
+    margin:auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#dash{
+    width:100px;
+    padding-top:30px;
+    margin: auto;
+    align-items: center;
+}
+.dash{
+    margin:auto;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Acme', sans-serif;
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    padding:20px;
+}
+.dash p{
+    margin-top:10px;
+}
+#storage{
+    width:100px;
+    padding-top:30px;
+    margin:auto;
+    align-items:center;
+}
+.storage{
+    margin:auto;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Acme', sans-serif;
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    padding:20px;
+}
+.storage p{
+    margin-top:10px;
+}
+#processor{
+    width:100px;
+    padding-top: 45px;
+    margin:auto;
+    align-items:center;
+}
+.processor{
+    margin:auto;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Acme', sans-serif;
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    padding-left:20px;
+    padding-right:20px;
+}
+.processor p{
+    margin-top:5px;
+    padding-bottom:30px;
+}
+#contact input{
+    margin:auto;
+    margin-top:20px;
+    margin-left:150px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:40px;
+    font-family: 'Acme', sans-serif;
+    font-size:15px;
+}
+#contact{
+    margin:auto;
+    width:500px;
+}
+.submit{
+    padding-top:10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.submit button{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+        
+    </style>
+</html>
